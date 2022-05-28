@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <form class="container" novalidate>
+        <div class="form">
+            <div> Имя
+                <input class="firstName" type="text" placeholder="Имя" required>*
+            </div>
+            <div> Фамилия
+                <input class="lastName" type="text" placeholder="Фамилия" required>*
+            </div>
+            <div> Дата рождения
+                <input class="birthday" type="date">
+            </div>
+            <div> E-mail
+                <input class="email" type="email" placeholder="E-mail" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$">*
+            </div>
+            <div> Password
+                <input class="password" type="password" placeholder="Пароль"  required>*
+            </div>
+            <button onclick="result()">
+                Зарегистрироваться
+            </button>
+            
+        </div>
+    </form>
+    <div id="errorsInfo"></div>
+
+    <script src="./form.js"></script>
+</body>
+
+</html>
