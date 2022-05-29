@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div {
     color: blueviolet;
     font-size: 14px;
@@ -30,3 +31,37 @@ button {
     border: 3px solid rgb(225, 221, 255);
     border-radius: 10px;
 }
+=======
+div {
+    color: blueviolet;
+    font-size: 14px;
+    margin: 5px;
+}
+
+button {
+    height: 2rem;
+    background-color: rgb(241, 239, 255);
+    border: 3px solid rgb(225, 221, 255);
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.form>div {
+    background-color: rgb(241, 239, 255);
+    padding: 3px;
+    width: 16rem;
+    border: 3px solid rgb(225, 221, 255);
+    border-radius: 10px;
+}
+>>>>>>> master

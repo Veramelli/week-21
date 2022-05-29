@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,4 +48,55 @@
       <script src="./cat.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник</title>
+    <style>
+        input:required:valid{
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="formElem">
+        <p>Ответьте на вопросы ниже: </p><br/>
+        <label>Кличка питомца:</label><input name="catname" type="text" required /><br/>
+        <label> Имя владельца: </label><input name="ownername" type="text" required /><br/>
+        <label>Контакты владельца: </label><input name="contacts" type="text" required /><br/>
+        <label> Порода питомца: </label>
+        <select name="breed">
+            <option value="Бенгал">Бенгал</option>
+            <option value="Сиамская">Сиамская</option>
+            <option value="Перс">Перс</option>
+            <option value="Мейнкун">Мейнкун</option>
+            <option value="Дворянин">"Дворянин"</option>
+        </select><br/>
+        <label> Чем питается:</label><br /> <input type="checkbox" name="feed" value="сухой корм"/>
+        сухой корм <br />
+        <input type="checkbox" name="feed" value="влажный корм"/>
+        влажный корм <br />
+        <input type="checkbox" name="feed" value="натуральный корм"/>
+        натуральный корм <br />
+        <label>Пол животного: </label><br />
+        <input type="radio" name="sex" value="male" required/> Самец<br />
+        <input type="radio" name="sex" value="female" /> Самка<br />
+        <label> Комментарий:</label><br />
+        <textarea name="comment" rows="7" cols="30"></textarea><br />
+        <div class="foto">
+            <label for="myfile" class="foto"> Фото питомца:</label>
+            <input type="file" class="my" id="myfile" name="myfile"/>
+        </div>
+        <button id="postButton">Сохранить</button>
+    </form>
+  
+      <script src="./cat.js"></script>
+</body>
+
+>>>>>>> master
 </html>
