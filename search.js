@@ -8,7 +8,7 @@
              console.log(picArray);
              let searchContent = "";
              for (let object of picArray) {
-                 let keys = object.url;
+                 let keys = object.images.original.url;
                  console.log(keys);
                  searchContent += `<div> <img src="${keys}"> </div>`;
                  console.log(searchContent);
